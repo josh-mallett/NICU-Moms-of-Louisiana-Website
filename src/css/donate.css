@@ -1,0 +1,60 @@
+.donate {
+  width: 100%;
+  height: 770px;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  background: white; }
+  .donate .donate_body {
+    width: 95%;
+    max-width: 1350px;
+    height: 700px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 5px 40px -10px #1e1e1e; }
+    .donate .donate_body .donate_header {
+      width: 100%;
+      height: 120px;
+      margin: 0 auto;
+      position: relative; }
+      .donate .donate_body .donate_header .donate_header_container {
+        width: 650px;
+        margin: 0 auto; }
+        .donate .donate_body .donate_header .donate_header_container .donate_icon {
+          width: 120px;
+          height: 120px;
+          margin: 0 20px 0 20px;
+          border-radius: 50%;
+          background: url("../../public/images/donation_icon.png");
+          background-size: cover;
+          background-position: center;
+          float: left; }
+        .donate .donate_body .donate_header .donate_header_container .donate_title {
+          float: left;
+          margin: -5px 20px 0 20px; }
+          .donate .donate_body .donate_header .donate_header_container .donate_title h1 {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 50px; }
+    .donate .donate_body .donate_content {
+      width: 100%;
+      height: 600px;
+      margin: 0 auto; }
+      .donate .donate_body .donate_content .paypal_donation_button {
+        width: 160px;
+        height: 50px;
+        position: relative;
+        margin: 0 auto; }
+      .donate .donate_body .donate_content .donate_text {
+        width: 400px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center; }
+        .donate .donate_body .donate_content .donate_text p {
+          font-family: "Lato", sans-serif;
+          line-height: 30px; }
+        .donate .donate_body .donate_content .donate_text .nicu_christmas {
+          position: relative;
+          margin: 20px 0 0 -45px; }
+
+/*# sourceMappingURL=donate.css.map */

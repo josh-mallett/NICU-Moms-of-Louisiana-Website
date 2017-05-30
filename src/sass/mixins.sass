@@ -1,0 +1,16 @@
+@mixin transition($trans)
+  -webkit-transition: $trans
+  -moz-transition:    $trans
+  -o-transition:      $trans
+  -ms-transition:     $trans
+  transition:         $trans
+
+@mixin placeholder($color)
+  ::-webkit-input-placeholder
+    color: $color
+  ::-moz-placeholder
+    color: $color
+  :-ms-input-placeholder
+    color: $color
+  :-moz-placeholder
+    color: $color

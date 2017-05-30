@@ -1,0 +1,114 @@
+.contact
+  width: 100%
+  height: 650px
+  position: relative
+  margin: 0 auto
+  padding: 80px 0 80px 0
+
+  .contact_title
+    width: 500px
+    height: 100px
+    position: relative
+    margin: 0 auto
+    background: white
+    text-align: center
+    line-height: 110px
+
+    h1
+      font-family: "Lato", sans-serif
+      font-size: 50px
+      color: rgb(50,50,50)
+
+
+  .contact_form
+    width: 500px
+    height: 500px
+    background: white
+    margin: 0 auto
+
+    form
+      width: 300px
+      margin: 0 auto
+      text-align: center
+
+      .form_content
+        padding: 10px 0 0 0
+        margin: 0 auto
+
+        li
+          list-style: none
+          @include placeholder(rgb(80,80,80))
+
+          input
+            width: 290px
+            height: 30px
+            text-align: center
+            position: relative
+            margin: 15px 10px 15px 5px
+            font-family: "Lato", sans-serif
+            border: solid rgb(80,80,80) 2px
+
+          textarea
+            width: 280px
+            height: 140px
+            max-width: 280px
+            max-height: 140px
+            margin: 15px 10px 15px 5px
+            padding: 5px
+            border: solid rgb(80,80,80) 2px
+            font-family: "Lato", sans-serif
+
+          span
+            color: red
+            position: absolute
+            right: 50%
+            font-family: "Lato", sans-serif
+
+          .first_name
+            margin: -9px 4px 0 0
+            font-size: 12px
+
+          .last_name
+            margin: -9px -155px 0 0
+            font-size: 12px
+
+          .email
+            margin: -9px -95px 0 0
+            font-size: 13px
+
+          .subject
+            margin: -9px -89px 0 0
+            font-size: 13px
+
+          .message
+            margin: -13px -65px 0 0
+            font-size: 13px
+
+          .button_submit
+            height: 40px
+            background: rgb(150,104,176)
+            font-weight: bold
+            color: rgb(240,240,240)
+            border: none
+            cursor: pointer
+            @include transition(all .1s ease)
+            &:hover
+              background: rgb(240,240,240)
+              color: rgb(150,104,176)
+
+          .submit_message
+            font-family: "Lato", sans-serif
+
+        #fn
+          width: 130px
+          float: left
+          margin-left: 0px
+          input
+            width: 130px
+
+        #ln
+          width: 130px
+          float: right
+          margin-right: 13px
+          input
+            width: 130px

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Source+Sans+Pro')
+@import "mixins"
+
+.width_teller
+  width: 50px
+  height: 50px
+  position: fixed
+  top: 200px
+  left: 10px
+  background: white
+
+html, body, .container, .root
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+
+.container
+  @import "navigation_bar"
+  @import "mobile_navigation_bar"
+  @import "header"
+  @import "about"
+  @import "news_resources"
+  @import "donate"
+  @import "contact"
+  @import "queries"

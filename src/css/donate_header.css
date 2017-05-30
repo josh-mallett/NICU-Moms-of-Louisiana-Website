@@ -1,0 +1,25 @@
+.donate_header {
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  position: relative; }
+  .donate_header .donate_header_container {
+    width: 650px;
+    margin: 0 auto; }
+    .donate_header .donate_header_container .donate_icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 20px 0 20px;
+      border-radius: 50%;
+      background: url("../../public/images/donation_icon.png");
+      background-size: cover;
+      background-position: center;
+      float: left; }
+    .donate_header .donate_header_container .donate_title {
+      float: left;
+      margin: -5px 20px 0 20px; }
+      .donate_header .donate_header_container .donate_title h1 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 50px; }
+
+/*# sourceMappingURL=donate_header.css.map */

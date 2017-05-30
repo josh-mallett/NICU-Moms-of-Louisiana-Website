@@ -1,0 +1,739 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto|Source+Sans+Pro");
+.width_teller {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 200px;
+  left: 10px;
+  background: white; }
+
+html, body, .container, .root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.container .navigation_bar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: -10px;
+  background: white;
+  z-index: 9;
+  box-shadow: 0 4px 8px #787878;
+  font-family: "Lato", sans-serif; }
+  .container .navigation_bar .navigation_bar_content {
+    width: 95%;
+    max-width: 1350px;
+    position: relative;
+    margin: 0 auto; }
+    .container .navigation_bar .navigation_bar_content .navigation_email {
+      height: 48px;
+      position: absolute;
+      top: 2px;
+      left: 10px;
+      line-height: 24px;
+      font-size: 14px; }
+      .container .navigation_bar .navigation_bar_content .navigation_email a {
+        text-decoration: none;
+        color: purple; }
+    .container .navigation_bar .navigation_bar_content .navigation_menu {
+      height: 50px;
+      right: 10px;
+      top: 0;
+      position: absolute;
+      font-family: "Montserrat", sans-serif; }
+      .container .navigation_bar .navigation_bar_content .navigation_menu li {
+        width: 100px;
+        height: 50px;
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        line-height: 63px;
+        cursor: pointer;
+        color: #282828;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+        .container .navigation_bar .navigation_bar_content .navigation_menu li:hover {
+          background: #9668b0;
+          color: #f0f0f0; }
+.container .mobile_navigation_bar {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  z-index: 9;
+  box-shadow: 0 -4px 8px #787878;
+  font-family: "Lato", sans-serif; }
+  .container .mobile_navigation_bar .mobile_navigation_bar_content {
+    width: 100%;
+    position: relative;
+    margin: 0 auto; }
+    .container .mobile_navigation_bar .mobile_navigation_bar_content .mobile_navigation_menu {
+      height: 40px;
+      left: 50%;
+      margin-left: -204px;
+      top: 0;
+      position: absolute;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px; }
+      .container .mobile_navigation_bar .mobile_navigation_bar_content .mobile_navigation_menu li {
+        width: 100px;
+        height: 40px;
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer;
+        color: #282828;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -ms-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+        .container .mobile_navigation_bar .mobile_navigation_bar_content .mobile_navigation_menu li:hover {
+          background: #9668b0;
+          color: #f0f0f0; }
+.container .header_wrapper {
+  height: 100%; }
+.container .header {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url("../../public/images/nicumoms_header_background.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -9; }
+  .container .header .logo {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin: 0 0 0 -200px; }
+    .container .header .logo img {
+      width: 400px;
+      height: 400px; }
+.container .spacer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: red; }
+.container .about {
+  width: 100%;
+  height: 710px;
+  position: relative;
+  background: white;
+  padding: 50px 0 50px 0;
+  float: none; }
+  .container .about .about_panels {
+    width: 95%;
+    max-width: 1350px;
+    height: 690px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    background: #fafafa;
+    box-shadow: 0 15px 40px -20px #1e1e1e; }
+    .container .about .about_panels .about_panel {
+      width: 30%;
+      float: left;
+      margin: 0 1.5% 0 1.5%;
+      text-align: center; }
+      .container .about .about_panels .about_panel .video {
+        margin: 50px 0 50px 0; }
+        .container .about .about_panels .about_panel .video iframe {
+          width: 100%;
+          height: 200px; }
+      .container .about .about_panels .about_panel .about_icon {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        background: #e6e6e6;
+        border-radius: 50%;
+        box-shadow: 0 8px 25px -6px #1e1e1e; }
+        .container .about .about_panels .about_panel .about_icon h1 {
+          font-family: "Roboto", sans-serif;
+          color: #1e1e1e;
+          position: absolute;
+          margin: 0 auto;
+          bottom: -50px; }
+      .container .about .about_panels .about_panel .mi {
+        background: url("../../public/images/mission_icon.png");
+        background-position: center;
+        background-size: cover; }
+        .container .about .about_panels .about_panel .mi h1 {
+          left: 20px; }
+      .container .about .about_panels .about_panel .ai {
+        background: url("../../public/images/about_icon.png");
+        background-position: center;
+        background-size: cover; }
+        .container .about .about_panels .about_panel .ai h1 {
+          left: 37px; }
+      .container .about .about_panels .about_panel .about_text {
+        width: 82%;
+        margin: 0 auto; }
+        .container .about .about_panels .about_panel .about_text p {
+          margin-top: 55px;
+          font-family: "Open Sans", sans-serif;
+          font-size: 14px; }
+      .container .about .about_panels .about_panel .mission_text {
+        line-height: 28px; }
+      .container .about .about_panels .about_panel .story_text {
+        line-height: 22px; }
+    .container .about .about_panels .text_panel {
+      padding: 30px 0 15px 0;
+      background: white;
+      box-shadow: 0px 18px 35px -12px #646464; }
+.container .news_and_resources {
+  width: 100%;
+  height: 680px;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  background: #e7bbff; }
+  .container .news_and_resources .news_and_resources_container {
+    width: 95%;
+    max-width: 1350px;
+    height: 620px;
+    padding: 25px 0 0 0;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 5px 40px -10px #1e1e1e; }
+    .container .news_and_resources .news_and_resources_container .news {
+      width: 45%;
+      height: 500px;
+      position: relative;
+      float: left;
+      text-align: center; }
+      .container .news_and_resources .news_and_resources_container .news h1 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 45px;
+        margin: 0 auto; }
+      .container .news_and_resources .news_and_resources_container .news iframe {
+        margin: 15px 0 0 0;
+        border: none;
+        overflow: hidden;
+        box-shadow: 0px 18px 35px -20px #1e1e1e; }
+    .container .news_and_resources .news_and_resources_container .resources {
+      width: 45%;
+      height: 500px;
+      position: relative;
+      float: left;
+      text-align: center; }
+      .container .news_and_resources .news_and_resources_container .resources h1 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 45px;
+        margin: 0 auto;
+        padding: 0 0 15px 0; }
+      .container .news_and_resources .news_and_resources_container .resources .chaplain {
+        width: 400px;
+        padding: 10px 0 55px 0;
+        margin: 0 auto;
+        background: #f7f7f7;
+        box-shadow: 0px 18px 35px -20px #1e1e1e;
+        color: #1e1e1e; }
+        .container .news_and_resources .news_and_resources_container .resources .chaplain .ryan_leblanc_headshot {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          margin: 0 auto;
+          border-radius: 50%;
+          background: url("../../public/images/ryan_headshot.jpg");
+          background-size: cover;
+          background-position: center; }
+          .container .news_and_resources .news_and_resources_container .resources .chaplain .ryan_leblanc_headshot h2 {
+            width: 320px;
+            font-family: "Source Sans Pro", sans-serif;
+            position: absolute;
+            left: -55px;
+            bottom: -65px; }
+        .container .news_and_resources .news_and_resources_container .resources .chaplain .ryan_info {
+          margin: 60px 0 0 10px; }
+          .container .news_and_resources .news_and_resources_container .resources .chaplain .ryan_info p {
+            width: 300px;
+            margin: 0 auto;
+            font-family: "Lato"; }
+    .container .news_and_resources .news_and_resources_container .nar {
+      margin: 0 2.5% 0 2.5%; }
+.container .donate {
+  width: 100%;
+  height: 770px;
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  background: white; }
+  .container .donate .donate_body {
+    width: 95%;
+    max-width: 1350px;
+    height: 700px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 5px 40px -10px #1e1e1e; }
+    .container .donate .donate_body .donate_header {
+      width: 100%;
+      height: 120px;
+      margin: 0 auto;
+      position: relative; }
+      .container .donate .donate_body .donate_header .donate_header_container {
+        width: 650px;
+        margin: 0 auto; }
+        .container .donate .donate_body .donate_header .donate_header_container .donate_icon {
+          width: 120px;
+          height: 120px;
+          margin: 0 20px 0 20px;
+          border-radius: 50%;
+          background: url("../../public/images/donation_icon.png");
+          background-size: cover;
+          background-position: center;
+          float: left; }
+        .container .donate .donate_body .donate_header .donate_header_container .donate_title {
+          float: left;
+          margin: -5px 20px 0 20px; }
+          .container .donate .donate_body .donate_header .donate_header_container .donate_title h1 {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 50px; }
+    .container .donate .donate_body .donate_content {
+      width: 100%;
+      height: 600px;
+      margin: 0 auto; }
+      .container .donate .donate_body .donate_content .paypal_donation_button {
+        width: 160px;
+        height: 50px;
+        position: relative;
+        margin: 0 auto; }
+      .container .donate .donate_body .donate_content .donate_text {
+        width: 400px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center; }
+        .container .donate .donate_body .donate_content .donate_text p {
+          font-family: "Lato", sans-serif;
+          line-height: 30px; }
+        .container .donate .donate_body .donate_content .donate_text .nicu_christmas {
+          position: relative;
+          margin: 20px 0 0 -45px; }
+.container .contact {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  margin: 0 auto;
+  padding: 80px 0 80px 0; }
+  .container .contact .contact_title {
+    width: 500px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    line-height: 110px; }
+    .container .contact .contact_title h1 {
+      font-family: "Lato", sans-serif;
+      font-size: 50px;
+      color: #323232; }
+  .container .contact .contact_form {
+    width: 500px;
+    height: 500px;
+    background: white;
+    margin: 0 auto; }
+    .container .contact .contact_form form {
+      width: 300px;
+      margin: 0 auto;
+      text-align: center; }
+      .container .contact .contact_form form .form_content {
+        padding: 10px 0 0 0;
+        margin: 0 auto; }
+        .container .contact .contact_form form .form_content li {
+          list-style: none;
+          -ms-input-placeholder-color: #505050;
+          -moz-placeholder-color: #505050; }
+          .container .contact .contact_form form .form_content li ::-webkit-input-placeholder {
+            color: #505050; }
+          .container .contact .contact_form form .form_content li ::-moz-placeholder {
+            color: #505050; }
+          .container .contact .contact_form form .form_content li input {
+            width: 290px;
+            height: 30px;
+            text-align: center;
+            position: relative;
+            margin: 15px 10px 15px 5px;
+            font-family: "Lato", sans-serif;
+            border: solid #505050 2px; }
+          .container .contact .contact_form form .form_content li textarea {
+            width: 280px;
+            height: 140px;
+            max-width: 280px;
+            max-height: 140px;
+            margin: 15px 10px 15px 5px;
+            padding: 5px;
+            border: solid #505050 2px;
+            font-family: "Lato", sans-serif; }
+          .container .contact .contact_form form .form_content li span {
+            color: red;
+            position: absolute;
+            right: 50%;
+            font-family: "Lato", sans-serif; }
+          .container .contact .contact_form form .form_content li .first_name {
+            margin: -9px 4px 0 0;
+            font-size: 12px; }
+          .container .contact .contact_form form .form_content li .last_name {
+            margin: -9px -155px 0 0;
+            font-size: 12px; }
+          .container .contact .contact_form form .form_content li .email {
+            margin: -9px -95px 0 0;
+            font-size: 13px; }
+          .container .contact .contact_form form .form_content li .subject {
+            margin: -9px -89px 0 0;
+            font-size: 13px; }
+          .container .contact .contact_form form .form_content li .message {
+            margin: -13px -65px 0 0;
+            font-size: 13px; }
+          .container .contact .contact_form form .form_content li .button_submit {
+            height: 40px;
+            background: #9668b0;
+            font-weight: bold;
+            color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            -webkit-transition: all 0.1s ease;
+            -moz-transition: all 0.1s ease;
+            -o-transition: all 0.1s ease;
+            -ms-transition: all 0.1s ease;
+            transition: all 0.1s ease; }
+            .container .contact .contact_form form .form_content li .button_submit:hover {
+              background: #f0f0f0;
+              color: #9668b0; }
+          .container .contact .contact_form form .form_content li .submit_message {
+            font-family: "Lato", sans-serif; }
+        .container .contact .contact_form form .form_content #fn {
+          width: 130px;
+          float: left;
+          margin-left: 0px; }
+          .container .contact .contact_form form .form_content #fn input {
+            width: 130px; }
+        .container .contact .contact_form form .form_content #ln {
+          width: 130px;
+          float: right;
+          margin-right: 13px; }
+          .container .contact .contact_form form .form_content #ln input {
+            width: 130px; }
+@media screen and (min-width: 1440.1px) {
+  .container .navigation_bar {
+    display: block; }
+  .container .mobile_navigation_bar {
+    display: none; } }
+@media screen and (min-width: 1140.1px) and (max-width: 1440px) {
+  .container .navigation_bar {
+    display: block; }
+  .container .mobile_navigation_bar {
+    display: none; }
+  .container .about .about_panels .about_panel .about_icon {
+    width: 200px;
+    height: 200px; }
+    .container .about .about_panels .about_panel .about_icon h1 {
+      width: 230px; }
+  .container .about .about_panels .about_panel .mi h1 {
+    left: -17px; }
+  .container .about .about_panels .about_panel .ai h1 {
+    left: -15px; }
+  .container .about .about_panels .about_panel .about_text p {
+    font-size: 13px; } }
+@media screen and (min-width: 965.1px) and (max-width: 1140px) {
+  .container .navigation_bar {
+    display: block; }
+  .container .mobile_navigation_bar {
+    display: none; }
+  .container .about {
+    height: 740px; }
+    .container .about .about_panels {
+      height: 720px; }
+      .container .about .about_panels .about_panel .about_icon {
+        width: 200px;
+        height: 200px; }
+        .container .about .about_panels .about_panel .about_icon h1 {
+          width: 230px; }
+      .container .about .about_panels .about_panel .mi h1 {
+        left: -17px; }
+      .container .about .about_panels .about_panel .ai h1 {
+        left: -15px; }
+      .container .about .about_panels .about_panel .about_text p {
+        font-size: 13px; } }
+@media screen and (min-width: 740.1px) and (max-width: 965px) {
+  .container .navigation_bar {
+    display: block; }
+  .container .mobile_navigation_bar {
+    display: none; }
+  .container .about {
+    height: 1280px; }
+    .container .about .about_panels {
+      height: 1260px; }
+      .container .about .about_panels .about_panel {
+        width: 80%;
+        margin: 0 auto;
+        float: none; }
+        .container .about .about_panels .about_panel .about_icon {
+          width: 200px;
+          height: 200px; }
+          .container .about .about_panels .about_panel .about_icon h1 {
+            width: 230px; }
+        .container .about .about_panels .about_panel .mi h1 {
+          left: -17px; }
+        .container .about .about_panels .about_panel .ai h1 {
+          left: -15px; }
+        .container .about .about_panels .about_panel .about_text p {
+          font-size: 13px; }
+  .container .news_and_resources {
+    height: 1300px; }
+    .container .news_and_resources .news_and_resources_container {
+      height: 1230px; }
+      .container .news_and_resources .news_and_resources_container .news {
+        width: 80%;
+        float: none;
+        margin: 0 auto; }
+      .container .news_and_resources .news_and_resources_container .resources {
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+        padding: 130px 0 0 0; } }
+@media screen and (min-width: 650.1px) and (max-width: 740px) {
+  .container .navigation_bar {
+    display: none; }
+  .container .mobile_navigation_bar {
+    display: block; }
+  .container .about {
+    height: 1440px; }
+    .container .about .about_panels {
+      height: 1420px;
+      background: none;
+      box-shadow: none; }
+      .container .about .about_panels .about_panel {
+        width: 80%;
+        margin: 0 auto;
+        float: none; }
+        .container .about .about_panels .about_panel .video iframe {
+          height: 270px; }
+        .container .about .about_panels .about_panel .about_icon {
+          width: 200px;
+          height: 200px; }
+          .container .about .about_panels .about_panel .about_icon h1 {
+            width: 230px; }
+        .container .about .about_panels .about_panel .mi h1 {
+          left: -17px; }
+        .container .about .about_panels .about_panel .ai h1 {
+          left: -15px; }
+        .container .about .about_panels .about_panel .about_text p {
+          font-size: 13px; }
+  .container .news_and_resources {
+    height: 1300px; }
+    .container .news_and_resources .news_and_resources_container {
+      height: 1230px; }
+      .container .news_and_resources .news_and_resources_container .news {
+        width: 80%;
+        float: none;
+        margin: 0 auto; }
+      .container .news_and_resources .news_and_resources_container .resources {
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+        padding: 130px 0 0 0; } }
+@media screen and (min-width: 530.1px) and (max-width: 650px) {
+  .container .navigation_bar {
+    display: none; }
+  .container .mobile_navigation_bar {
+    display: block; }
+  .container .about {
+    height: 1480px; }
+    .container .about .about_panels {
+      height: 1420px;
+      background: none;
+      box-shadow: none; }
+      .container .about .about_panels .about_panel {
+        width: 80%;
+        margin: 0 auto;
+        float: none; }
+        .container .about .about_panels .about_panel .video iframe {
+          height: 270px; }
+        .container .about .about_panels .about_panel .about_icon {
+          width: 200px;
+          height: 200px; }
+          .container .about .about_panels .about_panel .about_icon h1 {
+            width: 230px; }
+        .container .about .about_panels .about_panel .mi h1 {
+          left: -17px; }
+        .container .about .about_panels .about_panel .ai h1 {
+          left: -15px; }
+        .container .about .about_panels .about_panel .about_text p {
+          font-size: 13px; }
+  .container .news_and_resources {
+    height: 1300px; }
+    .container .news_and_resources .news_and_resources_container {
+      height: 1230px; }
+      .container .news_and_resources .news_and_resources_container .news {
+        width: 80%;
+        float: none;
+        margin: 0 auto; }
+      .container .news_and_resources .news_and_resources_container .resources {
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+        padding: 130px 0 0 0; }
+  .container .donate .donate_body .donate_header .donate_header_container {
+    width: 435px;
+    height: 10px; }
+    .container .donate .donate_body .donate_header .donate_header_container .donate_icon {
+      width: 90px;
+      height: 90px;
+      margin: 0 5px 0 5px; }
+    .container .donate .donate_body .donate_header .donate_header_container .donate_title {
+      margin: -10px 10px 0 10px; }
+      .container .donate .donate_body .donate_header .donate_header_container .donate_title h1 {
+        font-size: 40px; }
+  .container .donate .donate_body .donate_content .donate_text .nicu_christmas img {
+    width: 400px;
+    height: auto;
+    margin: 20px 0 0 40px; } }
+@media screen and (min-width: 440.1px) and (max-width: 530px) {
+  .container .navigation_bar {
+    display: none; }
+  .container .mobile_navigation_bar {
+    display: block; }
+  .container .about {
+    height: 1540px; }
+    .container .about .about_panels {
+      height: 1500px;
+      background: none;
+      box-shadow: none; }
+      .container .about .about_panels .about_panel {
+        width: 80%;
+        margin: 0 auto;
+        float: none; }
+        .container .about .about_panels .about_panel .video iframe {
+          height: 200px; }
+        .container .about .about_panels .about_panel .about_icon {
+          width: 200px;
+          height: 200px; }
+          .container .about .about_panels .about_panel .about_icon h1 {
+            width: 230px; }
+        .container .about .about_panels .about_panel .mi h1 {
+          left: -17px; }
+        .container .about .about_panels .about_panel .ai h1 {
+          left: -15px; }
+        .container .about .about_panels .about_panel .about_text p {
+          font-size: 13px; }
+  .container .news_and_resources {
+    height: 1300px; }
+    .container .news_and_resources .news_and_resources_container {
+      height: 1230px; }
+      .container .news_and_resources .news_and_resources_container .news {
+        width: 100%;
+        float: none;
+        margin: 0 auto; }
+      .container .news_and_resources .news_and_resources_container .resources {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 130px 0 0 0; }
+  .container .donate .donate_body .donate_header .donate_header_container {
+    width: 400px;
+    height: 10px; }
+    .container .donate .donate_body .donate_header .donate_header_container .donate_icon {
+      width: 60px;
+      height: 60px;
+      margin: 14px 14px 0 14px; }
+    .container .donate .donate_body .donate_header .donate_header_container .donate_title {
+      margin: 0px 15px 0 15px; }
+      .container .donate .donate_body .donate_header .donate_header_container .donate_title h1 {
+        font-size: 36px; }
+  .container .donate .donate_body .donate_content .donate_text {
+    width: 350px; }
+    .container .donate .donate_body .donate_content .donate_text .nicu_christmas img {
+      width: 350px;
+      height: auto;
+      margin: 20px 0 0 40px; }
+  .container .contact .contact_title {
+    width: 400px; }
+  .container .contact .contact_form {
+    width: 400px; } }
+@media screen and (max-width: 440px) {
+  .container .navigation_bar {
+    display: none; }
+  .container .mobile_navigation_bar {
+    display: block; }
+    .container .mobile_navigation_bar .mobile_navigation_bar_content .mobile_navigation_menu {
+      margin-left: -162px; }
+      .container .mobile_navigation_bar .mobile_navigation_bar_content .mobile_navigation_menu li {
+        width: 80px; }
+  .container .header .logo {
+    top: 100px;
+    margin: 0 0 0 -152px; }
+    .container .header .logo img {
+      width: 300px;
+      height: 300px; }
+  .container .about {
+    height: 1540px; }
+    .container .about .about_panels {
+      height: 1500px;
+      background: none;
+      box-shadow: none; }
+      .container .about .about_panels .about_panel {
+        width: 80%;
+        margin: 0 auto;
+        float: none; }
+        .container .about .about_panels .about_panel .video iframe {
+          height: 200px; }
+        .container .about .about_panels .about_panel .about_icon {
+          width: 200px;
+          height: 200px; }
+          .container .about .about_panels .about_panel .about_icon h1 {
+            width: 230px; }
+        .container .about .about_panels .about_panel .mi h1 {
+          left: -17px; }
+        .container .about .about_panels .about_panel .ai h1 {
+          left: -15px; }
+        .container .about .about_panels .about_panel .about_text p {
+          font-size: 13px; }
+  .container .news_and_resources {
+    height: 1300px; }
+    .container .news_and_resources .news_and_resources_container {
+      width: 100%;
+      height: 1230px; }
+      .container .news_and_resources .news_and_resources_container .news {
+        width: 100%;
+        float: none;
+        margin: 0 auto; }
+      .container .news_and_resources .news_and_resources_container .resources {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 130px 0 0 0; }
+        .container .news_and_resources .news_and_resources_container .resources .chaplain {
+          width: 360px; }
+  .container .donate .donate_body {
+    width: 100%; }
+    .container .donate .donate_body .donate_header .donate_header_container {
+      width: 100%;
+      height: 10px; }
+      .container .donate .donate_body .donate_header .donate_header_container .donate_icon {
+        width: 60px;
+        height: 60px;
+        margin: 14px 14px 0 14px; }
+      .container .donate .donate_body .donate_header .donate_header_container .donate_title {
+        margin: 0px 15px 0 15px; }
+        .container .donate .donate_body .donate_header .donate_header_container .donate_title h1 {
+          font-size: 36px; }
+    .container .donate .donate_body .donate_content .donate_text {
+      width: 350px; }
+      .container .donate .donate_body .donate_content .donate_text .nicu_christmas img {
+        width: 350px;
+        height: auto;
+        margin: 20px 0 0 40px; }
+  .container .contact .contact_title {
+    width: 100%; }
+  .container .contact .contact_form {
+    width: 100%; } }
+
+/*# sourceMappingURL=index.css.map */
