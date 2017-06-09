@@ -3,8 +3,12 @@ import { Field, reduxForm, reset } from 'redux-form';
 import { post } from 'axios';
 
 class ContactForm extends Component {
+
   constructor(props) {
     super(props);
+
+    // State holds the message that will display after the form is submitted.
+    // (Success or Failure)
 
     this.state =
     {
@@ -13,9 +17,15 @@ class ContactForm extends Component {
     }
   }
 
-
+  // Function that renders all input fields that are present in the form.
 
   renderInput(field) {
+
+    // Returns an input with proper placeholders.
+    // Input calls validation method once user enters and leaves the input, and
+    // displays appropriate error message if something is wrong.
+
+    // ...field.input is an object that contains predefined event handlers
     return (
       <div>
         <input
@@ -26,9 +36,18 @@ class ContactForm extends Component {
         <span className={field.cssClass}>{field.meta.touched ? field.meta.error : ''}</span>
       </div>
     )
+
   }
 
+  // Function that renders all textarea fields that are present in the form.
+
   renderTextArea(field) {
+
+    // Returns an textarea with proper placeholders.
+
+    // Input calls validation method once user enters and leaves the input, and
+    // displays appropriate error message if something is wrong.
+
     return (
       <div>
         <textarea
@@ -38,13 +57,18 @@ class ContactForm extends Component {
         <span className={field.cssClass}>{field.meta.touched ? field.meta.error : ''}</span>
       </div>
     )
+
   }
+
+  // Function that takes in response sent from server and updates the page to let the user know
+  // if their form was accepted and sent successfully.
 
   renderSubmitMessage(response) {
     if (response == 'Success!') {
       this.setState
         ({
-          submit_message: 'Form submitted successfully!', submit_message_color: 'rgb(10, 255, 104)'
+          submit_message: 'Form submitted successfully!',
+          submit_message_color: 'rgb(10, 255, 104)'
         });
     }
 
@@ -57,33 +81,44 @@ class ContactForm extends Component {
     }
   }
 
+  // Function that handles sending the form data to the backend once the user submits
+  // the form.
+
   onSubmit(values) {
-    console.log(values.first_name);
+
+    // Formdata object stores the values entered by the user in a better form to be sent
+    // to the server.
 
     let formData = new FormData();
 
+    // Declare content type and url of PHP file.
+    const config = { headers: { 'content-type': 'application/json' } }
+    const url = 'https://josh-mallett.com/php/index.php';
+    // Weird requirement to work inside of the post function.
+    var self = this;
+
+    // Insert all form data into Formdata object.
     formData.append('first_name', values.first_name);
     formData.append('last_name', values.last_name);
     formData.append('email', values.email);
     formData.append('subject', values.subject);
     formData.append('message', values.message);
 
-    const config = {
-            headers: { 'content-type': 'application/json' }
-        }
-    const url = 'https://nicumomsla.com/php/index.php';
-
-    var self = this;
-
+    // Axios post function: sends data to server and recieves response via AJAX.
+    // POST to server.
     post(url, formData, config)
+        // Then recieve response
         .then(function(response) {
+          // Output success or failure message to console.
           console.log(response.data);
+          // Calls renderSubmitMessage function using self as a reference to the
+          // whole ContactForm Component itself, rather than just this post function.
           self.renderSubmitMessage(response.data.toString());
         })
         .catch(function(error) {
+          // Catch any thrown error and console log it.
           console.log(error);
         });
-
 
   }
 
@@ -192,14 +227,9 @@ function validate(values) {
 
 const afterSubmit = (result, dispatch) => {
     dispatch(reset('contact'));
-    return (
-      <div className="success_message">
-        <span>Message sent!</span>
-      </div>
-    );
 }
 
-
+// Glue code
 export default reduxForm({
   validate,
   form: 'contact',
