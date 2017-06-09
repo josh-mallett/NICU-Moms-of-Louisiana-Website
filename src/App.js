@@ -11,8 +11,10 @@ import NewsResources from './components/news_and_resources';
 import Donate from './components/donations';
 import Contact from './components/contact';
 
+// Store is the overall state of the page and all of its components
 const store = createStore(reducers);
 
+// Provider allows everything wrapped inside of it to share props and store
 class Main extends Component  {
   render() {
     return (
